@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\french-connection\age-of-warfare\main.cpp">
+    <ClCompile Include="..\age-of-warfare\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\french-connection\age-of-warfare\Application.cpp">
+    <ClCompile Include="..\age-of-warfare\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\french-connection\age-of-warfare\Soldier.cpp">
+    <ClCompile Include="..\age-of-warfare\Soldier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\french-connection\age-of-warfare\Application.h">
+    <ClInclude Include="..\age-of-warfare\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\french-connection\age-of-warfare\Soldier.h">
+    <ClInclude Include="..\age-of-warfare\Soldier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

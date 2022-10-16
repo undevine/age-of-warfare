@@ -1,0 +1,10 @@
+﻿  Application.cpp
+C:\Users\Valiant\source\repos\undevine\age-of-warfare\age-of-warfare\Application.cpp(36,113): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Valiant\source\repos\undevine\age-of-warfare\age-of-warfare\Application.cpp(36,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Valiant\source\repos\undevine\age-of-warfare\age-of-warfare\Application.cpp(36,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Valiant\source\repos\undevine\age-of-warfare\age-of-warfare\Application.cpp(36,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  main.cpp
+  Soldier.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  age-of-warfare.vcxproj -> C:\Users\Valiant\source\repos\undevine\age-of-warfare\x64\Debug\age-of-warfare.exe

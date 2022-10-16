@@ -139,13 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\french-connection\age-of-warfare\Application.cpp" />
-    <ClCompile Include="..\..\french-connection\age-of-warfare\main.cpp" />
-    <ClCompile Include="..\..\french-connection\age-of-warfare\Soldier.cpp" />
+    <ClCompile Include="..\age-of-warfare\Application.cpp" />
+    <ClCompile Include="..\age-of-warfare\main.cpp" />
+    <ClCompile Include="..\age-of-warfare\Soldier.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\french-connection\age-of-warfare\Application.h" />
-    <ClInclude Include="..\..\french-connection\age-of-warfare\Soldier.h" />
+    <ClInclude Include="..\age-of-warfare\Application.h" />
+    <ClInclude Include="..\age-of-warfare\Soldier.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
