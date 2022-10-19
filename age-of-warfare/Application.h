@@ -12,6 +12,7 @@ public:
 	void Update();
 private:
 	void Draw();
-	std::vector<Soldier> soldiers;
+	std::vector<Soldier> player_soldiers;
+	std::vector<Soldier> cpu_soldiers;
 };
 

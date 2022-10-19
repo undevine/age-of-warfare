@@ -8,7 +8,7 @@ Application::Application()
 
 Application::~Application()
 {
-	CloseWindow(); // Close application and OpenGL context
+	CloseWindow();
 }
 
 void Application::Update()
@@ -17,11 +17,33 @@ void Application::Update()
 	{
 		if (IsMouseButtonPressed(0))
 		{
-			soldiers.push_back(Soldier());
+			player_soldiers.push_back(Soldier(true));
 		}
-		for (int i = 0; i < soldiers.size(); i++)
+		if (IsMouseButtonPressed(1))
 		{
-			soldiers.at(i).position.x++;
+			cpu_soldiers.push_back(Soldier(false));
+		}
+		for (int i = 0; i < player_soldiers.size(); i++)
+		{
+			if (cpu_soldiers.size() > 0)
+			{
+				player_soldiers.at(i).CheckCollision(&cpu_soldiers.front());
+			}
+			else
+			{
+				player_soldiers.at(i).MoveForward();
+			}
+		}
+		for (int i = 0; i < cpu_soldiers.size(); i++)
+		{
+			if (player_soldiers.size() > 0)
+			{
+				cpu_soldiers.at(i).CheckCollision(&player_soldiers.front());
+			}
+			else
+			{
+				cpu_soldiers.at(i).MoveForward();
+			}
 		}
 		Draw();
 	}
@@ -31,9 +53,13 @@ void Application::Draw()
 {
 	BeginDrawing();
 	ClearBackground(WHITE);
-	for (int i = 0; i < soldiers.size(); i++)
+	for (int i = 0; i < player_soldiers.size(); i++)
 	{
-		DrawRectangle(soldiers.at(i).position.x, soldiers.at(i).position.y, soldiers.at(i).size.x, soldiers.at(i).size.y, GREEN);
+		player_soldiers.at(i).Draw();
+	}
+	for (int i = 0; i < cpu_soldiers.size(); i++)
+	{
+		cpu_soldiers.at(i).Draw();
 	}
 	EndDrawing();
 }
